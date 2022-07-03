@@ -1,0 +1,16 @@
+C:\MyFile\Minamin1234\SandBox_VSCode\Dev\AutoCoder_CUI\bin\Debug\net5.0\AutoCoder_CUI.exe
+C:\MyFile\Minamin1234\SandBox_VSCode\Dev\AutoCoder_CUI\bin\Debug\net5.0\AutoCoder_CUI.deps.json
+C:\MyFile\Minamin1234\SandBox_VSCode\Dev\AutoCoder_CUI\bin\Debug\net5.0\AutoCoder_CUI.runtimeconfig.json
+C:\MyFile\Minamin1234\SandBox_VSCode\Dev\AutoCoder_CUI\bin\Debug\net5.0\AutoCoder_CUI.runtimeconfig.dev.json
+C:\MyFile\Minamin1234\SandBox_VSCode\Dev\AutoCoder_CUI\bin\Debug\net5.0\AutoCoder_CUI.dll
+C:\MyFile\Minamin1234\SandBox_VSCode\Dev\AutoCoder_CUI\bin\Debug\net5.0\ref\AutoCoder_CUI.dll
+C:\MyFile\Minamin1234\SandBox_VSCode\Dev\AutoCoder_CUI\bin\Debug\net5.0\AutoCoder_CUI.pdb
+C:\MyFile\Minamin1234\SandBox_VSCode\Dev\AutoCoder_CUI\obj\Debug\net5.0\AutoCoder_CUI.csproj.AssemblyReference.cache
+C:\MyFile\Minamin1234\SandBox_VSCode\Dev\AutoCoder_CUI\obj\Debug\net5.0\AutoCoder_CUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\MyFile\Minamin1234\SandBox_VSCode\Dev\AutoCoder_CUI\obj\Debug\net5.0\AutoCoder_CUI.AssemblyInfoInputs.cache
+C:\MyFile\Minamin1234\SandBox_VSCode\Dev\AutoCoder_CUI\obj\Debug\net5.0\AutoCoder_CUI.AssemblyInfo.cs
+C:\MyFile\Minamin1234\SandBox_VSCode\Dev\AutoCoder_CUI\obj\Debug\net5.0\AutoCoder_CUI.csproj.CoreCompileInputs.cache
+C:\MyFile\Minamin1234\SandBox_VSCode\Dev\AutoCoder_CUI\obj\Debug\net5.0\AutoCoder_CUI.dll
+C:\MyFile\Minamin1234\SandBox_VSCode\Dev\AutoCoder_CUI\obj\Debug\net5.0\ref\AutoCoder_CUI.dll
+C:\MyFile\Minamin1234\SandBox_VSCode\Dev\AutoCoder_CUI\obj\Debug\net5.0\AutoCoder_CUI.pdb
+C:\MyFile\Minamin1234\SandBox_VSCode\Dev\AutoCoder_CUI\obj\Debug\net5.0\AutoCoder_CUI.genruntimeconfig.cache

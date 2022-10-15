@@ -11,8 +11,8 @@ namespace AutoCoder
         public string? className { get{ return this.name;} set{ this.name = value;}}  //クラス名
         public ClassFunction? construct { get; set;}                                  //コンストラクタ
         public ClassFunction? destruct { get; set;}                                   //デストラクタ   
-        public List<ClassFunction?>? funcs { get; set;}                                //メンバ関数
-        public List<ClassVariable?>? vars { get; set;}                                 //メンバ変数
+        public List<ClassFunction?>? funcs { get; set;}                               //メンバ関数
+        public List<ClassVariable?>? vars { get; set;}                                //メンバ変数
         public Class() { }
     };
 }

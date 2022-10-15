@@ -6,7 +6,7 @@ namespace AutoCoder
     public partial class Namespace : Element
     {
         public Namespace? fromNamespace { get; set;}   //親の名前空間
-        public List<Element?>? elements { get; set;}   //名前空間内の定義
+        public List<Element?>? elements { get; set;}   //名前空間内の要素
         public Namespace() { }
     };
 }

@@ -14,5 +14,8 @@ namespace AutoCoder
         public List<ClassFunction?>? funcs { get; set;}                               //メンバ関数
         public List<ClassVariable?>? vars { get; set;}                                //メンバ変数
         public Class() { }
+
+        //クラス呼び出しとして生成する際に呼ばれます。
+        public string on_Call() { return "";}
     };
 }

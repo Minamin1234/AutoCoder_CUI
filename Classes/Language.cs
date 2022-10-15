@@ -36,6 +36,7 @@ namespace AutoCoder
         public string s_case = "case";                        //caseキーワード
         public string s_default = "default";                  //defaultキーワード
         public string s_for = "for";                          //forキーワード
+        public string s_foreach = "";                         //foreachキーワード
         public string s_while = "while";                      //whileキーワード
         public string s_do = "do";                            //doキーワード
         public string s_try = "try";                          //tryキーワード
@@ -49,5 +50,38 @@ namespace AutoCoder
         public string s_newline = "\n";                       //改行
         public string s_space = " ";                          //空白
         public Language() {}
+
+        //名前空間を生成します。
+        public string Namespace(Namespace nmsp) { return "";}
+
+        //クラス定義を生成します。
+        public string Class(Class cls) { return "";}
+
+        //メンバ関数定義を生成します。
+        public string ClassFunction(ClassFunction clf) { return "";}
+
+        //メンバ変数宣言を生成します。
+        public string ClassVariable(ClassVariable clv) { return "";}
+
+        //Ifステートメントを生成します。
+        public string IfStatement(Function cond,Function then) { return "";}
+
+        //If-elseステートメントを生成します。
+        public string IfStatement(Function cond,Function then,Function Else) { return "";}
+
+        //Forループを生成します。
+        public string ForLoop(Function initialize,Function cond,Function addition,Function exes) { return "";}
+
+        //Whileループを生成します。
+        public string WhileLoop(Function cond,Function exes,bool dowhile=false) { return "";}
+
+        //foreachループを生成します。
+        public string ForEachLoop(Function initialize,Variable container) { return "";}
+
+        //関数定義を生成します。
+        public string Function(Function f) { return "";}
+
+        //変数宣言を生成します。
+        public string Variable(Variable v) { return "";}
     };
 }

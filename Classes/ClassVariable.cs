@@ -2,7 +2,8 @@ using System;
 
 namespace AutoCoder
 {
-    public partial class ClassVariable : Class
+    //メンバ変数を定義するクラス
+    public partial class ClassVariable : Variable
     {
         public ClassVariable() { }
     };

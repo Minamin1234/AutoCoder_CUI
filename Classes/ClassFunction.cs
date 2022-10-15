@@ -2,7 +2,8 @@ using System;
 
 namespace AutoCoder
 {
-    public partial class ClassFunction : Class
+    //メンバ関数の定義を格納しておくクラス
+    public partial class ClassFunction : Function
     {
         public ClassFunction() { }
     };

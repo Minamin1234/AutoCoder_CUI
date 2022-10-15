@@ -37,6 +37,7 @@ namespace AutoCoder
         public string s_default = "default";                  //defaultキーワード
         public string s_for = "for";                          //forキーワード
         public string s_foreach = "";                         //foreachキーワード
+        public string s_in = "";                              //inキーワード
         public string s_while = "while";                      //whileキーワード
         public string s_do = "do";                            //doキーワード
         public string s_try = "try";                          //tryキーワード
@@ -52,7 +53,21 @@ namespace AutoCoder
         public Language() {}
 
         //名前空間を生成します。
-        public string Namespace(Namespace nmsp) { return "";}
+        public string Namespace(ref Namespace nmsp)
+        {
+            string result = "";
+            if(nmsp == null) return result;
+            result += this.s_namespace;
+            result += this.s_space;
+            result += nmsp.namespaceName;
+            result += this.s_newline;
+            result += this.s_block_begin;
+            result += this.s_newline;
+            result += nmsp.on_Build();
+            result += this.s_block_end;
+
+            return result;
+        }
 
         //クラス定義を生成します。
         public string Class(Class cls) { return "";}

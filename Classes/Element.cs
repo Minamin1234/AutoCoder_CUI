@@ -10,6 +10,6 @@ namespace AutoCoder
         public Element() { }
 
         //ソースコードが生成される際に呼ばれます。
-        public string on_Build() { return "";}
+        public virtual string on_Build() { return "";}
     };
 }

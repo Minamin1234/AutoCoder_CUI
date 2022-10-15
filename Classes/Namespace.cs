@@ -6,7 +6,14 @@ namespace AutoCoder
     public partial class Namespace : Element
     {
         public Namespace? fromNamespace { get; set;}   //親の名前空間
+        public string? namespaceName { get{ return this.name;} set{ this.name = value;}}
         public List<Element?>? elements { get; set;}   //名前空間内の要素
         public Namespace() { }
+        public override string on_Build()
+        {
+            string result = "";
+            if(this.elements == null) return "";
+            return result;
+        }
     };
 }

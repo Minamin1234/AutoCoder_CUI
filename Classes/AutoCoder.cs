@@ -6,9 +6,18 @@ namespace AutoCoder
     public partial class AutoCoder
     {
         public Project? Current { get; set;}        //現在のプロジェクト
+        public string? Result { get; set;}
         public AutoCoder() {}
 
         //定義・実装されたデータからソースコードをビルドします。
-        public bool Build() { return true;}
+        public bool Build()
+        {
+            if(this.Current == null || this.Current.Elements == null) return false;
+            foreach(var i in this.Current.Elements)
+            {
+                this.Result += i.on_Build();
+            }
+            return true;
+        }
     };
 }

@@ -1,0 +1,15 @@
+C:\MyFile\Minamin1234\AutoCoder_CUI\bin\Debug\net6.0\ConsoleApp.exe
+C:\MyFile\Minamin1234\AutoCoder_CUI\bin\Debug\net6.0\ConsoleApp.deps.json
+C:\MyFile\Minamin1234\AutoCoder_CUI\bin\Debug\net6.0\ConsoleApp.runtimeconfig.json
+C:\MyFile\Minamin1234\AutoCoder_CUI\bin\Debug\net6.0\ConsoleApp.dll
+C:\MyFile\Minamin1234\AutoCoder_CUI\bin\Debug\net6.0\ref\ConsoleApp.dll
+C:\MyFile\Minamin1234\AutoCoder_CUI\bin\Debug\net6.0\ConsoleApp.pdb
+C:\MyFile\Minamin1234\AutoCoder_CUI\obj\Debug\net6.0\ConsoleApp.csproj.AssemblyReference.cache
+C:\MyFile\Minamin1234\AutoCoder_CUI\obj\Debug\net6.0\ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\MyFile\Minamin1234\AutoCoder_CUI\obj\Debug\net6.0\ConsoleApp.AssemblyInfoInputs.cache
+C:\MyFile\Minamin1234\AutoCoder_CUI\obj\Debug\net6.0\ConsoleApp.AssemblyInfo.cs
+C:\MyFile\Minamin1234\AutoCoder_CUI\obj\Debug\net6.0\ConsoleApp.csproj.CoreCompileInputs.cache
+C:\MyFile\Minamin1234\AutoCoder_CUI\obj\Debug\net6.0\ConsoleApp.dll
+C:\MyFile\Minamin1234\AutoCoder_CUI\obj\Debug\net6.0\ref\ConsoleApp.dll
+C:\MyFile\Minamin1234\AutoCoder_CUI\obj\Debug\net6.0\ConsoleApp.pdb
+C:\MyFile\Minamin1234\AutoCoder_CUI\obj\Debug\net6.0\ConsoleApp.genruntimeconfig.cache

@@ -2,101 +2,86 @@ using System;
 
 namespace AutoCoder
 {
-    //Œ¾Œê–ˆ‚Ì‹Lq•û–@‚ğŠi”[‚µ‚Ä‚¨‚­ƒNƒ‰ƒXB
+    //è¨€èªæ¯ã®è¨˜è¿°æ–¹æ³•ã‚’æ ¼ç´ã—ã¦ãŠãã‚¯ãƒ©ã‚¹ã€‚
     public partial class Language
     {
-        public string? languageName { get; set;}              //Œ¾Œê–¼
-        public string s_include = "include";                  //ƒ‰ƒCƒuƒ‰ƒŠ“™‚Ì’Ç‰ÁƒL[ƒ[ƒh
-        public string s_define = "#";                         //ƒ}ƒNƒ’è‹`•¶š
-        public string s_namespace = "namespace";              //–¼‘O‹óŠÔ‚Ì‹LqƒL[ƒ[ƒh
-        public string s_block_begin = "{";                    //ˆ—‹LqƒuƒƒbƒN‚ÌŠJn•¶š
-        public string s_block_end = "}";                      //ˆ—‹LqƒuƒƒbƒN‚ÌI—¹•¶š
-        public string s_arg_begin = "(";                      //ˆø”‹Lq‚ÌŠJn•¶š
-        public string s_arg_end = ")";                        //ˆø”‹Lq‚ÌI—¹•¶š
-        public string s_line_end = ";";                       //ˆ—‚Ìs––•¶š
-        public string s_set = "=";                            //‘ã“ü•¶š
-        public string s_sprt_arg = ",";                       //ˆø”“à‚Ì‹æØ•¶š
-        public string s_bool_false = "false";                 //bool‚Ì‹U’l
-        public string s_bool_true = "true";                   //bool‚Ì^’l
-        public string s_bool = "bool";                        //boolŒ^ƒL[ƒ[ƒh
-        public string s_int = "int";                          //intŒ^ƒL[ƒ[ƒh
-        public string s_lint = "long long";                   //intŒ^‚æ‚è‘å‚«‚¢Œ^ƒL[ƒ[ƒh
-        public string s_float = "float";                      //floatŒ^ƒL[ƒ[ƒh
-        public string s_lfloat = "double";                    //floatŒ^‚æ‚è‘å‚«‚¢Œ^‚ÌƒL[ƒ[ƒh
-        public string s_decimal = "decimal";                  //decimalŒ^‚ÌƒL[ƒ[ƒh
-        public string s_char = "char";                        //•¶šŒ^ƒL[ƒ[ƒh
-        public string s_string = "string";                    //•¶š—ñŒ^ƒL[ƒ[ƒh
-        public string s_object = "object";                    //ƒIƒuƒWƒFƒNƒgŠî’êƒNƒ‰ƒXƒL[ƒ[ƒh
-        public string s_enum = "enum";                        //—ñ‹“‘ÌƒL[ƒ[ƒh
-        public string s_struct = "struct";                    //\‘¢‘ÌƒL[ƒ[ƒh
-        public string s_class = "class";                      //ƒNƒ‰ƒXƒL[ƒ[ƒh
-        public string s_if = "if";                            //ifƒL[ƒ[ƒh
-        public string s_else = "else";                        //elseƒL[ƒ[ƒh
-        public string s_switch = "switch";                    //switchƒL[ƒ[ƒh
-        public string s_case = "case";                        //caseƒL[ƒ[ƒh
-        public string s_default = "default";                  //defaultƒL[ƒ[ƒh
-        public string s_for = "for";                          //forƒL[ƒ[ƒh
-        public string s_foreach = "";                         //foreachƒL[ƒ[ƒh
-        public string s_in = "";                              //inƒL[ƒ[ƒh
-        public string s_while = "while";                      //whileƒL[ƒ[ƒh
-        public string s_do = "do";                            //doƒL[ƒ[ƒh
-        public string s_try = "try";                          //tryƒL[ƒ[ƒh
-        public string s_except = "catch";                     //catchƒL[ƒ[ƒh
-        public string s_throw = "throw";                      //throwƒL[ƒ[ƒh
-        public string s_friend = "friend";                    //friendƒL[ƒ[ƒh
-        public string s_accesslevel_private = "private";      //ƒAƒNƒZƒXƒŒƒxƒ‹privateƒL[ƒ[ƒh
-        public string s_accesslevel_protected = "protected";  //ƒAƒNƒZƒXƒŒƒxƒ‹protectedƒL[ƒ[ƒh
-        public string s_accesslevel_public = "public";        //ƒAƒNƒZƒXƒŒƒxƒ‹publicƒL[ƒ[ƒh
-        public string s_tab = "\t";                           //ƒ^ƒu
-        public string s_newline = "\n";                       //‰üs
-        public string s_space = " ";                          //‹ó”’
+        public string? languageName { get; set;}              //è¨€èªå
+        public string s_include = "include";                  //ãƒ©ã‚¤ãƒ–ãƒ©ãƒªç­‰ã®è¿½åŠ ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_define = "#";                         //ãƒã‚¯ãƒ­å®šç¾©æ–‡å­—
+        public string s_namespace = "namespace";              //åå‰ç©ºé–“ã®è¨˜è¿°ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_block_begin = "{";                    //å‡¦ç†è¨˜è¿°ãƒ–ãƒ­ãƒƒã‚¯ã®é–‹å§‹æ–‡å­—
+        public string s_block_end = "}";                      //å‡¦ç†è¨˜è¿°ãƒ–ãƒ­ãƒƒã‚¯ã®çµ‚äº†æ–‡å­—
+        public string s_arg_begin = "(";                      //å¼•æ•°è¨˜è¿°ã®é–‹å§‹æ–‡å­—
+        public string s_arg_end = ")";                        //å¼•æ•°è¨˜è¿°ã®çµ‚äº†æ–‡å­—
+        public string s_line_end = ";";                       //å‡¦ç†ã®è¡Œæœ«æ–‡å­—
+        public string s_set = "=";                            //ä»£å…¥æ–‡å­—
+        public string s_sprt_arg = ",";                       //å¼•æ•°å†…ã®åŒºåˆ‡æ–‡å­—
+        public string s_bool_false = "false";                 //boolã®å½å€¤
+        public string s_bool_true = "true";                   //boolã®çœŸå€¤
+        public string s_bool = "bool";                        //boolå‹ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_int = "int";                          //intå‹ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_lint = "long long";                   //intå‹ã‚ˆã‚Šå¤§ãã„å‹ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_float = "float";                      //floatå‹ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_lfloat = "double";                    //floatå‹ã‚ˆã‚Šå¤§ãã„å‹ã®ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_decimal = "decimal";                  //decimalå‹ã®ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_char = "char";                        //æ–‡å­—å‹ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_string = "string";                    //æ–‡å­—åˆ—å‹ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_object = "object";                    //ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆåŸºåº•ã‚¯ãƒ©ã‚¹ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_enum = "enum";                        //åˆ—æŒ™ä½“ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_struct = "struct";                    //æ§‹é€ ä½“ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_class = "class";                      //ã‚¯ãƒ©ã‚¹ã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_if = "if";                            //ifã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_else = "else";                        //elseã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_switch = "switch";                    //switchã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_case = "case";                        //caseã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_default = "default";                  //defaultã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_for = "for";                          //forã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_foreach = "";                         //foreachã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_in = "";                              //inã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_while = "while";                      //whileã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_do = "do";                            //doã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_try = "try";                          //tryã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_except = "catch";                     //catchã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_throw = "throw";                      //throwã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_friend = "friend";                    //friendã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_accesslevel_private = "private";      //ã‚¢ã‚¯ã‚»ã‚¹ãƒ¬ãƒ™ãƒ«privateã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_accesslevel_protected = "protected";  //ã‚¢ã‚¯ã‚»ã‚¹ãƒ¬ãƒ™ãƒ«protectedã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_accesslevel_public = "public";        //ã‚¢ã‚¯ã‚»ã‚¹ãƒ¬ãƒ™ãƒ«publicã‚­ãƒ¼ãƒ¯ãƒ¼ãƒ‰
+        public string s_tab = "\t";                           //ã‚¿ãƒ–
+        public string s_newline = "\n";                       //æ”¹è¡Œ
+        public string s_space = " ";                          //ç©ºç™½
         public Language() {}
 
-        //–¼‘O‹óŠÔ‚ğ¶¬‚µ‚Ü‚·B
-        public string Namespace(ref Namespace nmsp)
-        {
-            string result = "";
-            if(nmsp == null) return result;
-            result += this.s_namespace;
-            result += this.s_space;
-            result += nmsp.namespaceName;
-            result += this.s_newline;
-            result += this.s_block_begin;
-            result += this.s_newline;
-            result += nmsp.on_Build();
-            result += this.s_block_end;
+        //åå‰ç©ºé–“ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
+        public string Namespace(ref Namespace nmsp) { return ""+}
 
-            return result;
-        }
-
-        //ƒNƒ‰ƒX’è‹`‚ğ¶¬‚µ‚Ü‚·B
+        //ã‚¯ãƒ©ã‚¹å®šç¾©ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
         public string Class(Class cls) { return "";}
-
-        //ƒƒ“ƒoŠÖ”’è‹`‚ğ¶¬‚µ‚Ü‚·B
+        //ãƒ¡ãƒ³ãƒé–¢æ•°å®šç¾©ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
         public string ClassFunction(ClassFunction clf) { return "";}
 
-        //ƒƒ“ƒo•Ï”éŒ¾‚ğ¶¬‚µ‚Ü‚·B
+        //ãƒ¡ãƒ³ãƒå¤‰æ•°å®£è¨€ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
         public string ClassVariable(ClassVariable clv) { return "";}
 
-        //IfƒXƒe[ƒgƒƒ“ƒg‚ğ¶¬‚µ‚Ü‚·B
+        //Ifã‚¹ãƒ†ãƒ¼ãƒˆãƒ¡ãƒ³ãƒˆã‚’ç”Ÿæˆã—ã¾ã™ã€‚
         public string IfStatement(Function cond,Function then) { return "";}
 
-        //If-elseƒXƒe[ƒgƒƒ“ƒg‚ğ¶¬‚µ‚Ü‚·B
+        //If-elseã‚¹ãƒ†ãƒ¼ãƒˆãƒ¡ãƒ³ãƒˆã‚’ç”Ÿæˆã—ã¾ã™ã€‚
         public string IfStatement(Function cond,Function then,Function Else) { return "";}
 
-        //Forƒ‹[ƒv‚ğ¶¬‚µ‚Ü‚·B
+        //Forãƒ«ãƒ¼ãƒ—ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
         public string ForLoop(Function initialize,Function cond,Function addition,Function exes) { return "";}
 
-        //Whileƒ‹[ƒv‚ğ¶¬‚µ‚Ü‚·B
+        //Whileãƒ«ãƒ¼ãƒ—ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
         public string WhileLoop(Function cond,Function exes,bool dowhile=false) { return "";}
 
-        //foreachƒ‹[ƒv‚ğ¶¬‚µ‚Ü‚·B
+        //foreachãƒ«ãƒ¼ãƒ—ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
         public string ForEachLoop(Function initialize,Variable container) { return "";}
 
-        //ŠÖ”’è‹`‚ğ¶¬‚µ‚Ü‚·B
+        //é–¢æ•°å®šç¾©ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
         public string Function(Function f) { return "";}
 
-        //•Ï”éŒ¾‚ğ¶¬‚µ‚Ü‚·B
+        //å¤‰æ•°å®£è¨€ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
         public string Variable(Variable v) { return "";}
     };
 }

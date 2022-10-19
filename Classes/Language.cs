@@ -53,35 +53,35 @@ namespace AutoCoder
         public Language() {}
 
         //名前空間を生成します。
-        public string Namespace(ref Namespace nmsp) { return "";}
+        public virtual string Namespace(ref Namespace nmsp) { return "";}
 
         //クラス定義を生成します。
-        public string Class(Class cls) { return "";}
+        public virtual string Class(Class cls) { return "";}
         //メンバ関数定義を生成します。
-        public string ClassFunction(ClassFunction clf) { return "";}
+        public virtual string ClassFunction(ClassFunction clf) { return "";}
 
         //メンバ変数宣言を生成します。
-        public string ClassVariable(ClassVariable clv) { return "";}
+        public virtual string ClassVariable(ClassVariable clv) { return "";}
 
         //Ifステートメントを生成します。
-        public string IfStatement(Function cond,Function then) { return "";}
+        public virtual string IfStatement(Function cond,Function then) { return "";}
 
         //If-elseステートメントを生成します。
-        public string IfStatement(Function cond,Function then,Function Else) { return "";}
+        public virtual string IfStatement(Function cond,Function then,Function Else) { return "";}
 
         //Forループを生成します。
-        public string ForLoop(Function initialize,Function cond,Function addition,Function exes) { return "";}
+        public virtual string ForLoop(Function initialize,Function cond,Function addition,Function exes) { return "";}
 
         //Whileループを生成します。
-        public string WhileLoop(Function cond,Function exes,bool dowhile=false) { return "";}
+        public virtual string WhileLoop(Function cond,Function exes,bool dowhile=false) { return "";}
 
         //foreachループを生成します。
-        public string ForEachLoop(Function initialize,Variable container) { return "";}
+        public virtual string ForEachLoop(Function initialize,Variable container) { return "";}
 
         //関数定義を生成します。
-        public string Function(Function f) { return "";}
+        public virtual string Function(Function f) { return "";}
 
         //変数宣言を生成します。
-        public string Variable(Variable v) { return "";}
+        public virtual string Variable(Variable v) { return "";}
     };
 }

@@ -53,7 +53,7 @@ namespace AutoCoder
         public Language() {}
 
         //名前空間を生成します。
-        public string Namespace(ref Namespace nmsp) { return ""+}
+        public string Namespace(ref Namespace nmsp) { return "";}
 
         //クラス定義を生成します。
         public string Class(Class cls) { return "";}

@@ -3,7 +3,7 @@ using System;
 namespace AutoCoder
 {
     //名前空間の定義を格納しておくクラス
-    public partial class Namespace : Element,INestable
+    public partial class Namespace : Element
     {
         public Namespace? fromNamespace { get; set;}   //親の名前空間
         public string? namespaceName { get{ return this.name;} set{ this.name = value;}}
@@ -12,11 +12,6 @@ namespace AutoCoder
         public override string on_Build()
         {
             return this.language.Namespace(ref this);
-        }
-        
-        public string on_Build_childs()
-        {
-            return "";
         }
     };
 }

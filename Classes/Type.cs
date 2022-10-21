@@ -6,8 +6,12 @@ namespace AutoCoder
     public partial class Type : Element
     {
         public CommonType? commonType { get; set;}                                      //ˆê”ÊŒ^‚Ìí—Ş
+        public bool isRef { get; set;}                                                  //QÆŒ^‚Æ‚µ‚Ä‚ÌéŒ¾
+        public bool isPtr { get; set;}                                                  //ƒ|ƒCƒ“ƒ^[Œ^‚Æ‚µ‚Ä‚ÌéŒ¾
         public string? typeName { get{ return this.name;} set{ this.name = value;}}     //Œ^–¼
         public string? initialValue { get; set;}                                        //‰Šú’l
         public Type() { }
+
+        public override string on_Build() { return "";}
     };
 }

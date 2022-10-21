@@ -15,6 +15,11 @@ namespace AutoCoder
         public List<ClassVariable?>? vars { get; set;}                                //メンバ変数
         public Class() { }
 
+        public override string on_Build()
+        {
+            return "";
+        }
+
         //クラス呼び出しとして生成する際に呼ばれます。
         public string on_Call() { return "";}
     };

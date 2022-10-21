@@ -8,5 +8,6 @@ namespace AutoCoder
         public string? argName { get{ return this.name;} set{ this.name = value;}}  //ˆø”–¼
         public Type? argType { get; set;}                                           //ˆø”Œ^
         public Arg() { }
+        public override string on_Build() { return "";}
     };
 }

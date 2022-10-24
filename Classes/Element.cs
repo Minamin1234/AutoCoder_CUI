@@ -11,16 +11,6 @@ namespace AutoCoder
         public string? content { get; set;}    //ビルドされた要素(文字列)
         public Element() { }
 
-        public virtual void addToContent(string addstr)
-        {
-            this.content += (this.language.s_tab * this.level) + addstr;
-        }
-
-        public void operator<< (Element e1,string addstr)
-        {
-            el.content += (el.language.s_tab * el.level) + addstr;
-        }
-
         //ソースコードが生成される際に呼ばれます。
         public virtual string on_Build() { return "";}
     };

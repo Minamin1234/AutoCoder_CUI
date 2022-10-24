@@ -14,18 +14,6 @@ namespace AutoCoder
             string res = string.Empty;
             this << string.Empty;
             if (this.elements == null) return res;
-            this << this.language.s_namespace;
-            this << this.language.s_space;
-            this << this.namespaceName;
-            this << this.language.s_newline;
-            this << this.language.s_block_begin;
-            this << this.language.s_tab;
-            this << this.on_Build_childs();
-            this << this.language.s_newline;
-            this << this.language.s_block_end;
-            this << this.language.s_newline;
-
-            /*
             res += this.language.s_namespace;
             res += this.language.s_space;
             res += this.namespaceName;
@@ -36,7 +24,7 @@ namespace AutoCoder
             res += this.language.s_newline;
             res += this.language.s_block_end;
             res += this.language.s_newline;
-            */
+
             return res;
         }
 
@@ -48,7 +36,6 @@ namespace AutoCoder
             {
                 res += e.on_Build();
             }
-
         }
     };
 }

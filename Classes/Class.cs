@@ -52,7 +52,7 @@ namespace AutoCoder
             res += this.language.s_newline;
             res += this.language.s_block_end;
             
-            return "";
+            return res;
         }
 
         //クラス呼び出しとして生成する際に呼ばれます。

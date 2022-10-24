@@ -50,6 +50,7 @@ namespace AutoCoder
         public string s_tab = "\t";                           //タブ
         public string s_newline = "\n";                       //改行
         public string s_space = " ";                          //空白
+        public string s_colon = ":";
         public Language() {}
 
         //名前空間を生成します。
@@ -83,5 +84,23 @@ namespace AutoCoder
 
         //変数宣言を生成します。
         public virtual string Variable(Variable v) { return "";}
+
+        //アクセスレベルのキーワードを返します。
+        public virtual string AccessLevel(E_AccessLevel al)
+        {
+            switch(al)
+            {
+                case E_AccessLevel.PRIVATE:
+                    return this.s_accesslevel_private;
+                    break;
+                case E_AccessLevel.PROTECTED:
+                    return this.s_accesslevel_protected;
+                    break;
+                case E_AccessLevel.PUBLIC:
+                    return this.s_accesslevel_public;
+                    break;
+            }
+            return this.s_accesslevel_private;
+        }
     };
 }

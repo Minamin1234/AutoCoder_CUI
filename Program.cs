@@ -8,6 +8,8 @@ namespace AutoCoder // Note: actual namespace depends on the project name.
         {
             Console.WriteLine("Hello World!");
             Namespace nmsp = new Namespace();
+            Language lng = new Language();
+            nmsp.language = lng;
             nmsp.namespaceName = "Test";
             var res = nmsp.on_Build();
             Console.WriteLine(res);

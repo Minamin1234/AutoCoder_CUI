@@ -8,26 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\kiroa\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\kitig\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\MyFile\\Minamin1234\\AutoCoder_CUI\\ConsoleApp.csproj",
+      "projectUniqueName": "C:\\Users\\kitig\\Documents\\VSCode\\AutoCoder_CUI\\ConsoleApp.csproj",
       "projectName": "ConsoleApp",
-      "projectPath": "C:\\MyFile\\Minamin1234\\AutoCoder_CUI\\ConsoleApp.csproj",
-      "packagesPath": "C:\\Users\\kiroa\\.nuget\\packages\\",
-      "outputPath": "C:\\MyFile\\Minamin1234\\AutoCoder_CUI\\obj\\",
+      "projectPath": "C:\\Users\\kitig\\Documents\\VSCode\\AutoCoder_CUI\\ConsoleApp.csproj",
+      "packagesPath": "C:\\Users\\kitig\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kitig\\Documents\\VSCode\\AutoCoder_CUI\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\kiroa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\kitig\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -58,7 +51,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -67,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

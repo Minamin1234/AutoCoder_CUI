@@ -12,7 +12,6 @@ namespace AutoCoder
         public override string on_Build()
         {
             string res = string.Empty;
-            this << string.Empty;
             if (this.elements == null) return res;
             res += this.language.s_namespace;
             res += this.language.s_space;
@@ -36,6 +35,8 @@ namespace AutoCoder
             {
                 res += e.on_Build();
             }
+
+            return res;
         }
     };
 }

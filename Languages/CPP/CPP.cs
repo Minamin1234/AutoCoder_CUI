@@ -42,6 +42,8 @@ namespace AutoCoder
             res += nmsp.on_Build();
             res += this.s_newline;
             res += this.s_block_end;
+
+            return res;
         }
 
         public override string Class(Class cls)
@@ -57,6 +59,8 @@ namespace AutoCoder
             res += cls.on_Build();
             res += this.s_newline;
             res += this.s_block_end;
+
+            return res;
         }
 
         public override string ClassFunction(ClassFunction clf)

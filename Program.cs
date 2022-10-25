@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace AutoCoder // Note: actual namespace depends on the project name.
 {

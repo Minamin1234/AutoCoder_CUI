@@ -6,9 +6,9 @@ namespace AutoCoder
     public partial class Element
     {
         public uint level = 1;                 //インデントレベル
-        public string? name { get; set;}       //要素名
-        public Language? language { get; set;} //記述する言語
-        public string? content { get; set;}    //ビルドされた要素(文字列)
+        public string name = "element";        //要素名
+        public Language language = null;       //記述する言語
+        public string content  = "";           //ビルドされた要素(文字列)
         public Element() { }
 
         //ソースコードが生成される際に呼ばれます。

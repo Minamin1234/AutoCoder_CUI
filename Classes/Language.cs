@@ -5,7 +5,7 @@ namespace AutoCoder
     //言語毎の記述方法を格納しておくクラス。
     public partial class Language
     {
-        public string? languageName { get; set;}              //言語名
+        public string languageName = "cpp";                   //言語名
         public string s_include = "include";                  //ライブラリ等の追加キーワード
         public string s_define = "#";                         //マクロ定義文字
         public string s_namespace = "namespace";              //名前空間の記述キーワード

@@ -27,7 +27,7 @@ namespace AutoCoder
             return res;
         }
 
-        public void add_ToChild(ref Element any)
+        public void add_ToChild(Element any)
         {
             any.level++;
             this.elements.Add(any);

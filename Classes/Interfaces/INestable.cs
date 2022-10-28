@@ -6,7 +6,7 @@ namespace AutoCoder
     public interface INestable
     {
         //子要素に追加する処理
-        void add_ToChild(ref Element any);
+        void add_ToChild(Element any);
         //子要素をビルドする際の処理
         string on_Build_childs();
     }

@@ -18,6 +18,7 @@ namespace AutoCoder
         public override string on_Build()
         {
             string res = string.Empty;
+            res += this.Begin;
             res += this.language.s_class;
             res += this.language.s_space;
             res += this.className;
@@ -28,28 +29,28 @@ namespace AutoCoder
                 res += this.language.s_space;
                 res += this.from.className;
             }
-            res += this.language.s_newline;
+            res += this.NewLine;
             res += this.language.s_block_begin;
-            res += this.language.s_newline;
+            res += this.NewLine;
             
             res += this.construct.on_Build();
-            res += this.language.s_newline;
+            res += this.NewLine;
 
             res += this.destruct.on_Build();
-            res += this.language.s_newline;
+            res += this.NewLine;
 
             foreach(var v in this.vars)
             {
                 res += v.on_Build();
             }
-            res += this.language.s_newline;
+            res += this.NewLine;
 
             foreach(var f in this.funcs)
             {
                 res += f.on_Build();
                 res += this.language.s_space;
             }
-            res += this.language.s_newline;
+            res += this.NewLine;
             res += this.language.s_block_end;
             
             return res;

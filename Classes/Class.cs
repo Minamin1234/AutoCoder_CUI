@@ -66,6 +66,7 @@ namespace AutoCoder
             
             res += this.NewLine;
             res += this.language.s_block_end;
+            res += this.language.s_line_end;
             
             return res;
         }

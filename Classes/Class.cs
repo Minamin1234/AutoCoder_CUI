@@ -33,23 +33,37 @@ namespace AutoCoder
             res += this.language.s_block_begin;
             res += this.NewLine;
             
-            res += this.construct.on_Build();
-            res += this.NewLine;
-
-            res += this.destruct.on_Build();
-            res += this.NewLine;
-
-            foreach(var v in this.vars)
+            if(this.construct != null)
             {
-                res += v.on_Build();
+                res += this.construct.on_Build();
+                res += this.NewLine;
             }
+
+            if(this.destruct != null)
+            {
+                res += this.destruct.on_Build();
+                res += this.NewLine;
+            }
+
+            if(this.vars != null)
+            {
+                foreach(var v in this.vars)
+                {
+                    res += v.on_Build();
+                }
+            }
+            
             res += this.NewLine;
 
-            foreach(var f in this.funcs)
+            if(this.funcs != null)
             {
-                res += f.on_Build();
-                res += this.language.s_space;
+                foreach(var f in this.funcs)
+                {
+                    res += f.on_Build();
+                    res += this.language.s_space;
+                }
             }
+            
             res += this.NewLine;
             res += this.language.s_block_end;
             

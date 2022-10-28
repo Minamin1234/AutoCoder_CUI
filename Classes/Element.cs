@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace AutoCoder
 {
@@ -9,7 +11,7 @@ namespace AutoCoder
         public string name = "element";        //要素名
         public Language language = null;       //記述する言語
         public string content  = "";           //ビルドされた要素(文字列)
-        public string Begin
+        public string Begin                    //開始文字
         {
             get
             {

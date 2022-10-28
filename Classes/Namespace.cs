@@ -18,12 +18,19 @@ namespace AutoCoder
             res += this.namespaceName;
             res += this.NewLine;
             res += this.language.s_block_begin;
+            res += this.NewLine;
             if (this.elements != null) res += this.on_Build_childs();
-            res += this.language.s_newline;
+            res += this.NewLine;
             res += this.language.s_block_end;
-            res += this.language.s_newline;
+            res += this.NewLine;
 
             return res;
+        }
+
+        public void add_ToChild(ref Element any)
+        {
+            any.level++;
+            this.elements.Add(any);
         }
 
         public string on_Build_childs()

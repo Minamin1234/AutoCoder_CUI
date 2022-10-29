@@ -17,8 +17,6 @@ namespace AutoCoder // Note: actual namespace depends on the project name.
             Class cls = new Class();
             cls.className = "Class1";
             cls.language = lng;
-
-            
             
             nmsp.add_ToChild(cls);
             var res = nmsp.on_Build();

@@ -15,14 +15,6 @@ namespace AutoCoder
         public override string on_Build()
         {
             string res = string.Empty;
-            if(this.isRef)
-            {
-                res += this.language.s_ref;
-            }
-            else if(this.isPtr)
-            {
-                res += this.language.s_ptr;
-            }
 
             if(this.commonType == CommonType.NONE)
             {
@@ -31,6 +23,15 @@ namespace AutoCoder
             else
             {
                 res += this.get_commonTypename();
+            }
+
+            if(this.isRef)
+            {
+                res += this.language.s_ref;
+            }
+            else if(this.isPtr)
+            {
+                res += this.language.s_ptr;
             }
             return res;
         }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kitig\\Documents\\VSCode\\AutoCoder_CUI\\ConsoleApp.csproj": {}
+    "C:\\Users\\Minamin\\Documents\\VSCode\\AutoCoder_CUI\\ConsoleApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kitig\\Documents\\VSCode\\AutoCoder_CUI\\ConsoleApp.csproj": {
+    "C:\\Users\\Minamin\\Documents\\VSCode\\AutoCoder_CUI\\ConsoleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kitig\\Documents\\VSCode\\AutoCoder_CUI\\ConsoleApp.csproj",
+        "projectUniqueName": "C:\\Users\\Minamin\\Documents\\VSCode\\AutoCoder_CUI\\ConsoleApp.csproj",
         "projectName": "ConsoleApp",
-        "projectPath": "C:\\Users\\kitig\\Documents\\VSCode\\AutoCoder_CUI\\ConsoleApp.csproj",
-        "packagesPath": "C:\\Users\\kitig\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kitig\\Documents\\VSCode\\AutoCoder_CUI\\obj\\",
+        "projectPath": "C:\\Users\\Minamin\\Documents\\VSCode\\AutoCoder_CUI\\ConsoleApp.csproj",
+        "packagesPath": "C:\\Users\\Minamin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Minamin\\Documents\\VSCode\\AutoCoder_CUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kitig\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Minamin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

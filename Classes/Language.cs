@@ -50,7 +50,9 @@ namespace AutoCoder
         public string s_tab = "\t";                           //タブ
         public string s_newline = "\n";                       //改行
         public string s_space = " ";                          //空白
-        public string s_colon = ":";
+        public string s_colon = ":";                          //コロン
+        public string s_ptr = "*";                            //ポインター記号
+        public string s_ref = "&";                            //参照記号
         public Language() {}
 
         //名前空間を生成します。

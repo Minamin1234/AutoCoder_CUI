@@ -28,6 +28,16 @@ namespace AutoCoder
             res += this.NewLine;
             res += this.language.s_block_begin;
 
+            if(this.exes != null)
+            {
+                foreach(var e in this.exes)
+                {
+                    res += e.on_Build();
+                }
+            }
+
+            res += this.NewLine;
+            res += this.language.s_block_end;
             return res;
         }
 

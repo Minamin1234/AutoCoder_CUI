@@ -17,6 +17,16 @@ namespace AutoCoder // Note: actual namespace depends on the project name.
             Class cls = new Class();
             cls.className = "Class1";
             cls.language = lng;
+
+            ClassFunction clf = new ClassFunction();
+            clf.language = lng;
+            clf.functionName = "func1";
+            clf.accessLevel = E_AccessLevel.PUBLIC;
+            Type tp = new Type();
+            tp.typeName = "aa";
+            clf.returnType = tp;
+            var clfres = clf.on_Build();
+            Console.WriteLine(clfres);
             
             nmsp.add_ToChild(cls);
             var res = nmsp.on_Build();

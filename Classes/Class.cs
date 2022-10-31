@@ -45,11 +45,41 @@ namespace AutoCoder
                 res += this.NewLine;
             }
 
+            var pri = string.Empty;
+            var pro = string.Empty;
+            var pub = string.Empty;
+
+            pri += this.language.s_accesslevel_private;
+            pri += this.language.s_colon;
+            pri += this.NewLine;
+
+            pro += this.language.s_accesslevel_protected;
+            pro += this.language.s_colon;
+            pro += this.NewLine;
+
+            pub += this.language.s_accesslevel_public;
+            pub += this.language.s_colon;
+            pub += this.NewLine;
+
             if(this.vars != null)
             {
                 foreach(var v in this.vars)
                 {
-                    res += v.on_Build();
+                    switch(v.accessLevel)
+                    {
+                        case E_AccessLevel.PRIVATE:
+                            pri += v.on_Build();
+                            pri += this.NewLine;
+                            break;
+                        case E_AccessLevel.PROTECTED:
+                            pro += v.on_Build();
+                            pro += this.NewLine;
+                            break;
+                        case E_AccessLevel.PUBLIC:
+                            pub += v.on_Build();
+                            pub += this.NewLine;
+                            break;
+                    }
                 }
             }
             
@@ -59,10 +89,29 @@ namespace AutoCoder
             {
                 foreach(var f in this.funcs)
                 {
-                    res += f.on_Build();
-                    res += this.language.s_space;
+                    switch(f.accessLevel)
+                    {
+                        case E_AccessLevel.PRIVATE:
+                            pri += f.on_Build();
+                            pri += this.NewLine;
+                            break;
+                        case E_AccessLevel.PROTECTED:
+                            pro += f.on_Build();
+                            pro += this.NewLine;
+                            break;
+                        case E_AccessLevel.PUBLIC:
+                            pub += f.on_Build();
+                            pub += this.NewLine;
+                            break;
+                    }
                 }
             }
+
+            res += pri;
+            res += this.NewLine;
+            res += pro;
+            res += this.NewLine;
+            res += pub;
             
             res += this.NewLine;
             res += this.language.s_block_end;

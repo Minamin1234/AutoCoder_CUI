@@ -1,27 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Minamin\\Documents\\VSCode\\AutoCoder_CUI\\ConsoleApp.csproj": {}
+    "/Users/minamin/Documents/VSCode/AutoCoder_CUI/ConsoleApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Minamin\\Documents\\VSCode\\AutoCoder_CUI\\ConsoleApp.csproj": {
+    "/Users/minamin/Documents/VSCode/AutoCoder_CUI/ConsoleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Minamin\\Documents\\VSCode\\AutoCoder_CUI\\ConsoleApp.csproj",
+        "projectUniqueName": "/Users/minamin/Documents/VSCode/AutoCoder_CUI/ConsoleApp.csproj",
         "projectName": "ConsoleApp",
-        "projectPath": "C:\\Users\\Minamin\\Documents\\VSCode\\AutoCoder_CUI\\ConsoleApp.csproj",
-        "packagesPath": "C:\\Users\\Minamin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Minamin\\Documents\\VSCode\\AutoCoder_CUI\\obj\\",
+        "projectPath": "/Users/minamin/Documents/VSCode/AutoCoder_CUI/ConsoleApp.csproj",
+        "packagesPath": "/Users/minamin/.nuget/packages/",
+        "outputPath": "/Users/minamin/Documents/VSCode/AutoCoder_CUI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Minamin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/minamin/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
         }
       }
     }

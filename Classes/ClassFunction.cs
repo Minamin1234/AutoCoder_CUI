@@ -10,10 +10,7 @@ namespace AutoCoder
         public ClassFunction() { }
         public override string on_Build()
         {
-            var res = base.on_Build();
-            res = this.language.AccessLevel(this.accessLevel) + this.language.s_space + res;
-
-            return res;
+            return base.on_Build();
         }
     };
 }

@@ -8,9 +8,5 @@ namespace AutoCoder
         public Class memberOf = null;                              //関数を持つクラス
         public E_AccessLevel accessLevel = E_AccessLevel.PRIVATE;  //関数のアクセスレベル
         public ClassFunction() { }
-        public override string on_Build()
-        {
-            return base.on_Build();
-        }
     };
 }

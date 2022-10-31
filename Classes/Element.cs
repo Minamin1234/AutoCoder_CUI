@@ -34,5 +34,10 @@ namespace AutoCoder
 
         //ソースコードが生成される際に呼ばれます。
         public virtual string on_Build() { return "";}
+        //要素のリストなどに追加された際に呼ばれます。
+        public virtual void on_Added(Element on)
+        {
+            this.level = on.level + 1;
+        }
     };
 }

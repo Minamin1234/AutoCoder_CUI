@@ -120,7 +120,46 @@ namespace AutoCoder
             return res;
         }
 
+        public override void on_Added(Element on)
+        {
+            base.on_Added(on);
+
+            if(this.vars != null)
+            {
+                foreach(var v in this.vars)
+                {
+                    v.on_Added(this);
+                }
+            }
+            
+            if(this.funcs != null)
+            {
+                foreach(var f in this.funcs)
+                {
+                    f.on_Added(this);
+                }
+            }
+
+            if(this.construct != null)
+            {
+                this.on_Added(this);
+            }
+
+            if(this.destruct != null)
+            {
+                this.on_Added(this);
+            }
+        }
+
         //クラス呼び出しとして生成する際に呼ばれます。
         public string on_Call() { return "";}
-    };
-}
+
+        //メンバ関数を追加します。
+        public void add_func(ClassFunction clf)
+        {
+            if(this.funcs == null) return;
+            clf.memberOf = this;
+            this.funcs.Add(clf);
+            clf.on_Added(this);
+        }
+    }}

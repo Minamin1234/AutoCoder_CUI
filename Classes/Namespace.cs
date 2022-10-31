@@ -27,10 +27,20 @@ namespace AutoCoder
             return res;
         }
 
+        public override void on_Added(Element on)
+        {
+            base.on_Added(on);
+            if(this.elements == null) return;
+            foreach (var i in this.elements)
+            {
+                i.on_Added(this);
+            }
+        }
+
         public void add_ToChild(Element any)
         {
-            any.level++;
             this.elements.Add(any);
+            any.on_Added(this);
         }
 
         public string on_Build_childs()
@@ -44,5 +54,4 @@ namespace AutoCoder
 
             return res;
         }
-    };
-}
+    }}

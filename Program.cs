@@ -17,6 +17,7 @@ namespace AutoCoder // Note: actual namespace depends on the project name.
             Class cls = new Class();             //クラス要素
             cls.className = "Class1";            //クラス名
             cls.language = lng;                  //クラス要素を記述する言語
+            cls.funcs = new List<ClassFunction>();
 
             ClassFunction clf = new ClassFunction(); //メンバ関数
             clf.language = lng;                      //関数を記述する言語
@@ -25,11 +26,13 @@ namespace AutoCoder // Note: actual namespace depends on the project name.
             Type tp = new Type();                    //型
             tp.typeName = "aa";                      //型名
             clf.returnType = tp;                     //関数の戻り値型
-            var clfres = clf.on_Build();             //クラス関数のビルド結果
-            Console.WriteLine(clfres);               
+            //var clfres = clf.on_Build();             //クラス関数のビルド結果
+            //Console.WriteLine(clfres);               
             
             nmsp.add_ToChild(cls);                   //クラスを名前空間内に含める
+            cls.add_func(clf);
             var res = nmsp.on_Build();               //名前空間要素のビルド
+            Console.WriteLine($"nmsp: {nmsp.level},cls: {cls.level},clf: {clf.level}");
             Console.WriteLine(res);
         }
     }

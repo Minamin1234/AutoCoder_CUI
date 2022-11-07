@@ -79,5 +79,12 @@ namespace AutoCoder
         }
 
         //関数呼び出しとしてコード生成します。
-        public string on_call() { return "";}
+        public string on_call(Element from)
+        {
+            string result = string.Empty;
+            result += from.Begin;
+            result += this.functionName;
+            result += this.language.s_arg_begin;
+            return "";
+        }
     }}
